@@ -39,7 +39,7 @@ For message context menus, you can get the targeted message by accessing the `ta
 client.on(Events.InteractionCreate, interaction => {
 	if (!interaction.isUserContextMenuCommand()) return;
 	// Get the User's username from context menu
-	const { username } = interaction.targetUser;
+	const { username } = interaction.targetId;
 	console.log(username);
 });
 ```
